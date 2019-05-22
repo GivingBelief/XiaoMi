@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+
+/* 清除浮动 */
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+
+html, body, h1, h2, h3, h4, h5, h6,p,ul{
+  margin: 0;
+  padding: 0;
+}
+input{
+  padding: 0;
+  border: none;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+a{
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* 文本通用宽度盒子 */
+.row {
+  width: 1225px;
+  /*background-color: #f00;*/
+  margin: 0 auto;
+}
+
+/* 新品样式1 */
+.red-border{
+  border: 1px solid #FF6700;
+  color:#FF6700;
+  padding: 2px 20px;
+  font-size: 12px;
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  margin-left: -28px;
+  top: -1px;
+  line-height: 15px;
+
+}
+
+/* 折扣优惠样式 */
+.discount{
+  background-color: #E53935;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 0;
+}
+/* 新品优惠样式2 */
+.news{
+  background-color: #83C44E;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 0;
+}
+
+/* 添加一个外上边距 */
+.mar-top {
+  margin-top: 10px;
+}
+
+/* 添加一个中划线 */
+.linethrough{
+  text-decoration: line-through;
+  font-size: 10px;
+  color: #999;
+  margin-left: 5px;
+}
+
+
+/* 中间大图 */
+.big-tv {
+  width: 100%;
+  height: 130px;
+  padding: 40px 0;
+}
+
+
+/* 给第六部分的商品列表设置阴影 */
+.six-btn .six-right .six-right-one:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+  transform:translateY(-3px);
+}
+.end-div div:hover{
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, .2);
+  transform:translateY(-3px);
+}

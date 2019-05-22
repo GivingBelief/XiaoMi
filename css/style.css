@@ -1,0 +1,1051 @@
+@charset "UTF-8";
+
+#header {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+}
+
+#header .row div {
+  display: inline-block;
+}
+
+#header .header-left a, #header .header-right a {
+  color: #b0b0b0;
+}
+
+/* 头部公共部分样式 */
+#header a:hover {
+  color: #fff;
+}
+
+/* 头部左边内容 */
+#header .header-left {
+  /*float: left;*/
+  line-height: 40px;
+}
+
+#header .header-left a:not(.not-line)::before {
+  content: "|";
+  margin-right: 5px;
+}
+
+/* 头部右边内容 */
+#header .header-right {
+  float: right;
+}
+
+#header .header-right .line::before {
+  content: "|";
+  margin: 0px 5px;
+}
+
+#header .header-right .buy-car {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  /*background-color: #0f0;*/
+  margin-left: 20px;
+  position: relative;
+}
+
+#header .header-right .buy-car:hover {
+  background-color: #fff;
+
+}
+
+#header .header-right .buy-car:hover a {
+  color: #ffa500;
+}
+
+#header .header-right .buy-car .none-div {
+  width: 300px;
+  height: 100px;
+  background-color: #ccc;
+  position: absolute;
+  left: -198px;
+  bottom: -100px;
+  display: none;
+  text-align: center;
+  line-height: 100px;
+  font-size: 12px;
+  z-index: 998;
+}
+
+#header .header-right .buy-car:hover .none-div {
+  display: inline-block;
+}
+
+/* 第二部分*/
+#main .top-word div {
+  float: left;
+}
+
+#main .top-word {
+  width: 100%;
+  /*height: 105px;*/
+  line-height: 105px;
+  /*background-color: #0f0;*/
+}
+
+/* logo图案 */
+#main .top-word .top-img {
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+  background-color: #ff6700;
+  margin-top: 28px;
+}
+
+/* 文字部分 */
+#main .top-word .center-word {
+  width: 700px;
+  height: 100%;
+  /*background-color: #00f;*/
+  margin-left: 80px;
+  margin-right: 30px;
+}
+
+#main .top-word .center-word .center-word-div {
+  padding: 0 15px;
+  position: relative;
+}
+
+#main .top-word .center-word .center-word-div a {
+  font-size: 15px;
+  color: #000;
+
+}
+
+#main .top-word .center-word .center-word-div a:hover {
+  color: #ff6700;
+}
+
+/* 第一部分头部商品隐藏框公共样式 */
+#main .top-word .center-word .center-word-div .ceter-word-goods {
+  width: 1333px;
+  height: 199px;
+  position: absolute;
+  top: 105px;
+  background-color: #f00;
+  z-index: 998;
+  border-top: 1px solid #ccc;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 60px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 1s;
+  /* 上面样式有display样式,在设置样式改变隐藏标签,会出错 */
+  /* 用透明度可以解决问题 */
+  /*opacity: 0;*/
+  display: none;
+}
+
+#main .top-word .center-word .center-word-div:hover .ceter-word-goods {
+  /*opacity: 1;*/
+  /*height: 199px;*/
+  display: inline-block;
+  background-color: #fff;
+}
+
+#main .top-word .center-word .center-word-div .ceter-word-one {
+  left: -198px;
+}
+
+#main .top-word .center-word .center-word-div .ceter-word-two {
+  left: -288px;
+}
+
+#main .top-word .center-word .center-word-div .ceter-word-three {
+  left: -348px;
+}
+
+#main .top-word .center-word .center-word-div .ceter-word-four {
+  left: -408px;
+}
+
+#main .top-word .center-word .center-word-div .ceter-word-five {
+  left: -485px;
+}
+
+#main .top-word .center-word .center-word-div .ceter-word-six {
+  left: -545px;
+}
+
+#main .top-word .center-word .center-word-div .ceter-word-seven {
+  left: -605px;
+}
+
+#main .top-word .center-word .center-word-div .ceter-word-enight {
+  left: -680px;
+}
+
+.center-word .center-word-div .ceter-word-goods div {
+  flex: 1;
+  position: relative;
+  /*border: 1px solid #000;*/
+  text-align: center;
+  line-height: 15px;
+
+}
+
+.center-word .center-word-div .ceter-word-goods div img {
+  width: 170px;
+  /*padding-top: 30px;*/
+  /*margin-top: 30px;*/
+  /*padding: 30px 15px 0px 15px;*/
+  /*margin-bottom: 10px;*/
+  margin: 30px 15px 10px 15px;
+
+}
+.center-word .center-word-div .ceter-word-goods div img:not(.notimg){
+  border-right: 1px solid #ccc;
+}
+
+
+.center-word .center-word-div .ceter-word-goods div p {
+  font-size: 13px;
+}
+
+.center-word .center-word-div .ceter-word-goods div .mi8 {
+  color: #FF6700;
+  margin-bottom: 10px;
+}
+
+/* 输入框部分 */
+#main .top-word .input-box {
+  /*width: 302px;*/
+  height: 60px;
+  /*border: 1px solid #000;*/
+  margin-top: 27px;
+  position: relative;
+  box-sizing: padding-box;
+}
+
+#main .top-word .input-box input {
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*top: 0;*/
+  float: left;
+  width: 240px;
+  height: 58px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+#main .top-word .input-box .click-div {
+  float: left;
+  width: 60px;
+  height: 58px;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+#main .top-word .input-box .click-div:hover {
+  background-color: #ff6700;
+}
+
+#main .top-word .input-box p {
+
+  font-size: 15px;
+  display: inline-block;
+  line-height: 16px;
+  position: absolute;
+  left: 50%;
+  margin-left: -57px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+#main .top-word .input-box p span {
+  margin-right: 10px;
+  background-color: #DDD;
+  color: #999;
+}
+
+#main .top-word .input-box p span:hover {
+  background-color: rgb(255, 133, 0);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 第二部分 */
+#main .two {
+  display: flex;
+}
+
+#main .two .left-phone {
+  flex: 1;
+  background-color: #6A6B71;
+}
+
+#main .two .left-phone .oul {
+  padding: 20px 0;
+}
+
+#main .two .left-phone .oul .lis {
+  height: 42px;
+  padding: 0px 20px;
+  line-height: 42px;
+  position: relative;
+}
+
+#main .two .left-phone .oul .lis:hover {
+  background-color: #FF6700;
+}
+
+#main .two .left-phone .oul .lis a {
+  font-size: 16px;
+  display: block;
+  color: #fff;
+}
+
+#main .two .left-phone .oul .lis .lcink {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  float: right;
+  /*color: #B0B7B5;*/
+  background-image: url("../images/threes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateZ(-90deg);
+  margin-top: 12px;
+}
+
+/* 消失的手机盒子公共样式 */
+#main .two .left-phone .oul .lis .none-div {
+  position: absolute;
+  width: 980px;
+  height: 460px;
+  background-color: #ff0;
+  z-index: 998;
+}
+
+#main .two .left-phone .oul .lis .none-div ul {
+  width: 100%;
+  height: 100%;
+}
+
+#main .two .left-phone .oul .lis .none-div ul li {
+  background-color: #fff;
+  width: 245px;
+  height: 76.6px;
+  line-height: 40px;
+  float: left;
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 13px;
+
+}
+
+#main .two .left-phone .oul .lis .none-div ul li img {
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 5px;
+
+}
+
+/* 消失的手机的每一个盒子 */
+#main .two .left-phone .oul .lis:nth-of-type(1) .none-div {
+  left: 245px;
+  top: -20px;
+  display: none;
+}
+
+#main .two .left-phone .oul .lis:nth-of-type(2) .none-div {
+  left: 245px;
+  top: -62px;
+  display: none;
+}
+
+#main .two .left-phone .oul .lis:nth-of-type(3) .none-div {
+  left: 245px;
+  top: -104px;
+  display: none;
+}
+
+#main .two .left-phone .oul .lis:nth-of-type(4) .none-div {
+  left: 245px;
+  top: -146px;
+  display: none;
+}
+
+#main .two .left-phone .oul .lis:nth-of-type(5) .none-div {
+  left: 245px;
+  top: -188px;
+  display: none;
+}
+
+#main .two .left-phone .oul .lis:nth-of-type(6) .none-div {
+  left: 245px;
+  top: -230px;
+  display: none;
+}
+
+#main .two .left-phone .oul .lis:nth-of-type(7) .none-div {
+  left: 245px;
+  top: -272px;
+  display: none;
+}
+
+#main .two .left-phone .oul .lis:nth-of-type(8) .none-div {
+  left: 245px;
+  top: -314px;
+  display: none;
+}
+
+#main .two .left-phone .oul .lis:nth-of-type(9) .none-div {
+  left: 245px;
+  top: -356px;
+  display: none;
+}
+
+#main .two .left-phone .oul .lis:nth-of-type(10) .none-div {
+  left: 245px;
+  top: -398px;
+  display: none;
+}
+
+/* 鼠标移上li标签,消失的div显示 */
+#main .two .left-phone .oul .lis:hover .none-div {
+  display: inline-block;
+}
+
+#main .two .right-img {
+  flex: 4;
+  height: 460px;
+  /*background-color: #0f0;*/
+}
+
+#main .two .right-img ul {
+  position: relative;
+  height: 460px;
+}
+
+#main .two .right-img ul li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#main .two .right-img ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 第三部分 */
+#main .three {
+  display: flex;
+  height: 171px;
+  margin-top: 20px;
+}
+
+#main .three .three-one {
+  flex: 1;
+  /*background-color: #f00;*/
+}
+
+#main .three .three-one div {
+  float: left;
+  width: 81px;
+  height: 35px;
+  padding-top: 50px;
+  background-color: #5F5750;
+  text-align: center;
+  color: #ccc;
+  font-size: 12px;
+
+}
+
+#main .three .three-one a:hover div {
+  color: #fff;
+}
+
+/* 大图下面的六张背景图 */
+#main .three .three-one a:nth-child(1) div {
+  background-image: url("../images/threes5.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 24px 15px;
+}
+
+#main .three .three-one a:nth-child(1):hover div {
+  background-image: url("../images/threes5-2.png");
+}
+
+#main .three .three-one a:nth-child(2) div {
+  background-image: url("../images/threes2.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 26px 15px;
+}
+
+#main .three .three-one a:nth-child(2):hover div {
+  background-image: url("../images/threes2-1.png");
+}
+
+#main .three .three-one a:nth-child(3) div {
+  background-image: url("../images/threes4.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: 9px -1px;
+}
+
+#main .three .three-one a:nth-child(3):hover div {
+  background-image: url("../images/threes4-1.png");
+}
+
+#main .three .three-one a:nth-child(4) div {
+  background-image: url("../images/threes3.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 25px 15px;
+}
+
+#main .three .three-one a:nth-child(4):hover div {
+  background-image: url("../images/threes3-1.png");
+}
+
+#main .three .three-one a:nth-child(5) div {
+  background-image: url("../images/threes6.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 23px 15px;
+}
+
+#main .three .three-one a:nth-child(5):hover div {
+  background-image: url("../images/threes6-1.png");
+}
+
+#main .three .three-one a:nth-child(6) div {
+  background-image: url("../images/threes1.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 24px 15px;
+}
+
+#main .three .three-one a:nth-child(6):hover div {
+  background-image: url("../images/threes1-1.png");
+}
+
+#main .three .three-one a:nth-child(3n-1) div {
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+#main .three .three-one .three-top-line {
+  border-top: 1px solid #ddd;
+}
+
+#main .three .three-two {
+  flex: 4;
+  /*background-color: #0f0;*/
+  margin-left: -1px;
+  display: flex;
+}
+
+#main .three .three-two div {
+  flex: 1;
+  /*padding: 10px;*/
+  box-sizing: padding-box;
+  margin-left: 20px;
+  transition: all .5s;
+}
+
+#main .three .three-two div:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+
+}
+
+#main .three .three-two div img {
+  width: 307px;
+  height: 171px;
+  height: 100%;
+}
+
+/* 第四部分(小米闪购) */
+#main .four .four-top {
+  width: 100%;
+  height: 50px;
+  /*background-color: #f00;*/
+  line-height: 50px;
+  padding-top: 25px;
+}
+
+#main .four .four-top span {
+  float: left;
+  font-size: 20px;
+}
+
+#main .four .four-top button {
+  float: right;
+  margin-top: 16px;
+  margin-right: 10px;
+}
+
+#main .four .four-btn {
+  width: 100%;
+  display: flex;
+}
+
+#main .four .four-btn .four-btn-left {
+  flex: 1;
+  background-color: #F1EDED;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* 闪电图标部分 */
+.four .four-btn-left p:nth-child(1) {
+  color: #E53934;
+  font-size: 19px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.four .four-btn-left p:nth-child(3) {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.four .four-btn-left span {
+  font-size: 1.8em;
+  color: #605751;
+}
+
+.four .four-btn-left .background-span {
+  background-color: #605751;
+  color: #fff;
+  padding: 0px 5px;
+}
+
+#main .four .four-btn .four-btn-right {
+  flex: 4;
+  /*background-color: #0ff;*/
+  display: flex;
+}
+
+#main .four .four-btn .four-btn-right div {
+  flex: 1;
+  margin-left: 20px;
+  /*margin-right: 20px;*/
+  background-color: #FAFAFA;
+
+}
+
+/* 右边4个商品列表 */
+.four .four-btn-right div {
+  text-align: center;
+}
+
+.four .four-btn-right div img {
+  width: 160px;
+  height: 160px;
+  margin: 20px;
+  margin-top: 0;
+  padding-top: 20px;
+  border-top: 1px solid #f00;
+}
+
+.four .four-btn-right div p:nth-child(2) {
+  font-size: 15px;
+}
+
+.four .four-btn-right div p:nth-child(3) {
+  font-size: 14px;
+  color: #999;
+  margin: 5px 0;
+}
+
+.four .four-btn-right div p:nth-child(4) span:nth-child(1) {
+  font-size: 14px;
+  color: #ff6700;
+  margin-right: 10px;
+}
+
+/* 第五部分 */
+
+#main .five {
+  padding: 30px 0;
+}
+
+#main .five img {
+  width: 100%;
+}
+
+/* 第六部分 */
+#main .six {
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+#main .six-top {
+  padding-bottom: 15px;
+}
+
+#main .six-top p {
+  display: inline-block;
+  float: right;
+}
+
+#main .six-top span:nth-child(1) {
+  float: left;
+  font-size: 21px;
+}
+
+#main .six-top p span:nth-child(1) a {
+  font-size: 17px;
+  color: #000;
+  padding-right: 10px;
+
+}
+
+#main .six-top p span:nth-child(2) {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #bbb;
+  text-align: center;
+  line-height: 18px;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#main .six-top p a {
+  font-size: 1em;
+  margin-right: 10px;
+  transition: all 0.2s;
+  color: #555;
+
+}
+
+#main .six-top p a:hover {
+  color: #ff6700;
+  border-bottom: 2px solid #ff6700;
+}
+
+#main .six-top p:hover span:nth-child(1) a {
+  color: #ff6700;
+}
+
+#main .six-top p:hover span:nth-child(2) {
+  background-color: #ff6700;
+}
+
+.six-btn {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.six-btn .six-left {
+  flex: 1;
+  background-color: #ffff00;
+}
+
+.six-btn .six-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.six-btn .six-right {
+  flex: 4;
+}
+
+.six-btn .six-right .six-right-one {
+  display: inline-block;
+  width: 234px;
+  height: 319px;
+  background-color: #fff;
+  margin-left: 7px;
+  text-align: center;
+  /* 设置过渡动画时长 */
+  transition: all .5s;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.six-btn .six-right div a {
+  display: block;
+}
+
+.six-btn .six-right div img {
+  width: 160px;
+  height: 160px;
+  margin: 20px;
+}
+
+.six-btn .six-right div p:nth-child(2) {
+  font-size: 0.9em;
+}
+
+.six-btn .six-right div p:nth-child(3) {
+  font-size: 0.7em;
+  color: #999;
+  margin: 10px 0;
+}
+
+.six-btn .six-right div p:nth-child(4) span:nth-child(1) {
+  font-size: 0.8em;
+  color: #ff6700;
+}
+
+/* 第一二个家电左图片做动画 */
+.six-move-img {
+  transition: all .5s;
+}
+
+.six-move-img:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+  transform: translateY(-5px);
+}
+
+.yellow-posia {
+  width: 100%;
+  height: 80px;
+  background-color: #ff6700;
+  position: absolute;
+  left: 0;
+  bottom: -90px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  transition: all .3s;
+}
+
+.yellow-posia a span:nth-child(1) {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.yellow-posia a span:nth-child(3) {
+  display: inline-block;
+  color: #eee;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.six-btn .six-right div:hover .yellow-posia {
+  bottom: 0;
+}
+
+.end-div {
+  display: inline-block;
+  width: 234px;
+  height: 325px;
+  /*background-color: #ff0000;*/
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.end-div div {
+  transition: all 0.3s;
+}
+
+.last-div, .last-div2 {
+  height: 150px;
+  background-color: #fff;
+}
+
+.last-div {
+  margin-bottom: 20px;
+}
+
+.last-div a {
+  height: 100px;
+  padding-top: 30px;
+  background-image: url('../images/jingshuiqi.jpg');
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: 120px 40px;;
+  text-align: left;
+}
+
+.last-div2 a {
+  height: 100%;
+  background-image: url('../images/jiantou.png');
+  background-repeat: no-repeat;
+  background-size: 90px;
+  background-position: 120px 30px;;
+  text-align: left;
+}
+
+.last-div a p, .last-div2 a p {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+  padding-left: 20px;
+}
+
+.last-div2 a p {
+  margin-top: 50px;
+}
+
+.last-div a span, .last-div2 a span {
+  display: inline-block;
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #ff6700;
+}
+
+.last-div2 a span {
+  color: #999;
+}
+
+.last-div3 a {
+  background-image: url('../images/zhineng10.jpg');
+}
+
+.last-div4 a {
+  background-image: url('../images/dapei10.jpg');
+}
+
+.last-div5 a {
+  background-image: url('../images/peijian10.jpg');
+}
+
+.last-div6 a {
+  background-image: url('../images/zhoubian10.jpg');
+}
+
+/* 固定定位样式 */
+.fixed-div {
+  width: 80px;
+  height: 240px;
+  background-color: #fff;
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  z-index: 998;
+  border: 1px solid #ccc;
+  border-right: none;
+
+}
+
+.fixed-div div {
+  width: 100%;
+  height: 79px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+}
+
+.fixed-div div a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/my.png");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  top: 20px;
+}
+
+.fixed-div div p {
+  padding-top: 55px;
+  color: #999;
+  font-size: 13px;
+}
+
+.fixed-div div:hover a {
+  background-image: url("../images/my-1.png");
+}
+
+.fixed-div div:hover p {
+  color: #f00;
+}
+
+/* 第七部分 */
+.seven {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.seven-btn-right div {
+  background-color: #fff !important;
+  transition: all 0.3s;
+
+}
+
+.seven-btn-right div img {
+  border-top: none !important;
+}
+
+.seven-btn-right div:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+#main .seven .four-btn .four-btn-right div {
+  margin-left: 0;
+}
+
+#main .seven .four-btn .four-btn-right div:nth-child(n+2) {
+  margin-left: 20px;
+}
+
+.seven-two .four-btn-right div img {
+  width: 100%;
+  height: 220px;
+  margin: 0;
+  padding: 0;
+}
+
+.seven-two .four-btn-right div p {
+  padding: 0px 20px;
+  text-align: left;
+
+}
+
+.seven-two .four-btn-right div p:nth-child(2) {
+  margin: 20px 0px;
+}
+
+.seven-two .four-btn-right div p:nth-child(3) {
+  font-size: 10px;
+}
+
+.seven-two .four-btn-right div p:nth-child(4) a {
+  display: inline-block;
+  color: #333;
+  font-size: 15px;
+  /*padding-right: 10px;*/
+
+}
+
+.seven-two .four-btn-right div p:nth-child(4) span:nth-child(2) {
+  display: inline-block;
+  width: 1px;
+  height: 17px;
+  background-color: #e0e0e0;
+  margin: 0px 10px;
+}
+
+.seven-two .four-btn-right div p:nth-child(4) span:nth-child(3) {
+  display: inline-block;
+  height: 20px;
+  color: #ff6700;
+  font-size: 15px;
+  position: relative;
+  top: -2px;
+}
+
+.seven-two .four-btn-right div:nth-child(3) p:nth-child(4) a {
+  width: 122px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
